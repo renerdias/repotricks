@@ -34,7 +34,7 @@ curl -sS https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | su
 
 ### 1.4. Adicionando repositório ao sources.list:
 
-`$(lsb_release -cs)` **Pode ser sustituído pelo codename da distro**
+`$(lsb_release -cs)` **Pode ser sustituído pelo codename da distro base (ubuntu/debian)**
 ```
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 ```
