@@ -65,7 +65,7 @@ PROGRAMAS_PARA_INSTALAR=(
   git
   virtualbox
   virtualbox-guest-additions-iso
-  pgmodeler
+
   grsync
   spotify-client
   flameshot
@@ -73,6 +73,7 @@ PROGRAMAS_PARA_INSTALAR=(
   # Instalado de repositório de terceiros adicionado
   dbeaver-ce
   postgresql
+    pgmodeler # Vai ser instalada uma versao mais recente com o repositorio do ppostgresql
   obs-studio
   google-chrome-stable
 )
