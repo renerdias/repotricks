@@ -23,6 +23,14 @@ sudo apt-get install curl ca-certificates gnupg
 ```
 curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 ```
+ou
+```
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+```
+Substituido por
+```
+curl -sS https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/postgresql.gpg
+```
 
 ### 1.4. Adicionando repositório ao sources.list:
 
@@ -34,7 +42,7 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)
 ### 1.5. Atualizando lista de pacotes, e iniciando a instalação:
 ```
 sudo apt-get update
-sudo apt-get install postgresql
+sudo apt-get install postgresql -y
 ```
 
 
