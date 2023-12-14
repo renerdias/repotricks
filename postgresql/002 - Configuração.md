@@ -20,13 +20,23 @@ Redigite a nova senha UNIX:
 ```
 
 
-# Liberar acesso remoto, 
-#### ARQUIVO /etc/postgresql/13/main/pg_hba.conf
+## 3. Liberar acesso remoto
+
+### 3.1 No arquivo pg_hba.conf
+   - No Ubuntu e derivados, normalmente está localizado em /etc/postgresql/$VERSION/main/pg_hba.conf
+   - Você pode procurar usando o comando find / -name pg_hba.conf
+
+Adicionar a linha abaixo
+```bash
 host    all             postgres        192.168.0.1/24          trust
+```
+
+### 3.2 No firewall
 
 É necessário liberar a porta no firewall
+```sh
 sudo iptables -A INPUT -p tcp --dport 5432 -j ACCEPT
-
+```
 
 
 
