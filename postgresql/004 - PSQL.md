@@ -1,23 +1,23 @@
 # PostgreSQL -PSQL
 
-## 3. PSQL
+## 4. PSQL
 
-### 3.1. Logar como postgres no SO
+### 4.1. Logar como postgres no SO
 ```
 sudo su postgres
 ```
 
-### 3.2. Importar DUMP 
+### 4.2. Importar DUMP 
 
-#### 3.2.1. Importar banco de dump SEM **create database**
+#### 4.2.1. Importar banco de dump SEM **create database**
 psql -f nomebanco < file.sql
 
-#### 3.2.2. Importar banco de dump COM **create database**
+#### 4.2.2. Importar banco de dump COM **create database**
 psql -f file.sql
 
 
 
-### 3.3. Criar banco
+### 4.3. Criar banco
 ```sh
 !/bin/bash
 
@@ -45,12 +45,12 @@ echo
 ```
 
 
-### 3.1.2. Excluir banco
+### 4.1.2. Excluir banco
 ```
 dropdb teste01
 ```
 
-### 3.1. Listar bases de dados
+### 4.1. Listar bases de dados
 ```
 \list ou \l
 ```
