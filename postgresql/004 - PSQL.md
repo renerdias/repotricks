@@ -10,11 +10,13 @@ sudo su postgres
 ### 4.2. Importar DUMP 
 
 #### 4.2.1. Importar banco de dump SEM **create database**
+```
 psql -f nomebanco < file.sql
-
+```
 #### 4.2.2. Importar banco de dump COM **create database**
+```
 psql -f file.sql
-
+```
 
 
 ### 4.3. Criar banco
