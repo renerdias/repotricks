@@ -1,3 +1,6 @@
+
+dpkg --get-selections |grep postgres
+
 sudo apt purge postgresql
 
 Procurar pastas
