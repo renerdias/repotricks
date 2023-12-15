@@ -1,6 +1,8 @@
 pg_lsclusters
 para listar os clusters
 
+https://www.hostinger.com.br/tutoriais/listar-pacotes-instalados-ubuntu
+
 https://unix.stackexchange.com/questions/686042/apt-cannot-remove-package-postgresql
 
 
