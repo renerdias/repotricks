@@ -45,4 +45,8 @@ sudo apt-get update
 sudo apt-get install postgresql -y
 ```
 
+### 1.6. Verificar instalação
+```
+sudo systemctl status postgresql
+```
 
