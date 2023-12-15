@@ -3,6 +3,28 @@ para listar os clusters
 
 
 
+
+This is the nuke it and restart approach to postgreql problems..
+
+sudo apt update && sudo apt full-upgrade -y
+
+Now run this, you HAVE to run these together or it will not work:
+
+rm -rf /var/lib/dpkg/info/postgresql* && dpkg --configure -a
+
+You then need to run this to upgrade the package again
+
+sudo apt update && sudo apt full-upgrade -y
+
+
+
+
+
+$ sudo apt-cache depends postgresql-16 | grep '[ |]Depends: [^<]' | cut -d: -f2 | tr -d ' ' | xargs sudo apt-get --reinstall install -y
+
+https://www.hostinger.com.br/tutoriais/instalar-postgresql-ubuntu
+https://www.servermania.com/kb/articles/setup-postgresql-cluster
+
 dpkg --get-selections |grep postgres
 apt list --installed | grep postgres
 
