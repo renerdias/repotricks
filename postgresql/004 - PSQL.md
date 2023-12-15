@@ -7,20 +7,7 @@
 sudo su postgres
 ```
 
-### 4.2. Importar DUMP 
-
-#### 4.2.1. Importar banco de dump SEM **create database**
-```
-psql -f nomebanco < file.sql
-psql --dbname=escola --filename=rh.sql
-```
-#### 4.2.2. Importar banco de dump COM **create database**
-```
-psql -f file.sql
-```
-
-
-### 4.3. Criar banco
+### 4.2. Criar banco
 
 ```
 createdb -h localhost -p 5432 -E UTF8 --echo --encoding=UTF8 --lc-ctype='pt_BR.UTF-8' --lc-collate='pt_BR.UTF-8' escola "Banco de informações escolares."
@@ -50,6 +37,22 @@ createdb \
 echo
 echo
 ```
+
+
+### 4.3. Importar DUMP 
+
+#### 4.3.1. Importar banco de dump SEM **create database**
+```
+psql -f nomebanco < file.sql
+psql --dbname=escola --filename=rh.sql
+```
+#### 4.3.2. Importar banco de dump COM **create database**
+```
+psql -f file.sql
+```
+
+
+
 
 
 ### 4.1.2. Excluir banco
