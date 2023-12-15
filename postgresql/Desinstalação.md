@@ -1,7 +1,7 @@
 pg_lsclusters
 para listar os clusters
 
-
+https://unix.stackexchange.com/questions/686042/apt-cannot-remove-package-postgresql
 
 
 This is the nuke it and restart approach to postgreql problems..
