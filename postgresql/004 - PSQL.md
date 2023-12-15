@@ -43,7 +43,7 @@ echo
 
 #### 4.3.1. Importar banco de dump SEM **create database**
 ```
-psql -f nomebanco < file.sql
+psql nomebanco < file.sql
 psql --dbname=escola --filename=rh.sql
 ```
 #### 4.3.2. Importar banco de dump COM **create database**
