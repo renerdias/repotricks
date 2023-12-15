@@ -1,3 +1,7 @@
+pg_lsclusters
+para listar os clusters
+
+
 
 dpkg --get-selections |grep postgres
 apt list --installed | grep postgres
