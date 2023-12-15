@@ -1,5 +1,6 @@
 
 dpkg --get-selections |grep postgres
+apt list --installed | grep postgres
 
 sudo apt purge postgresql
 
