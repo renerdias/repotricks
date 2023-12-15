@@ -3,6 +3,8 @@ sudo apt purge postgresql
 Procurar pastas
 find / -name postgresql
 ```sh
+sudo rm -rfdv /etc/init.d/postgresql
+
 sudo rm -rfv /etc/init.d/postgresql
 
 sudo rm -rfv /var/lib/postgresql
