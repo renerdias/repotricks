@@ -21,6 +21,10 @@ psql -f file.sql
 
 
 ### 4.3. Criar banco
+
+```
+createdb -h localhost -p 5432 -E UTF8 --echo --encoding=UTF8 --lc-ctype='pt_BR.UTF-8' --lc-collate='pt_BR.UTF-8' escola "Banco de informações escolares."
+```
 ```sh
 !/bin/bash
 
