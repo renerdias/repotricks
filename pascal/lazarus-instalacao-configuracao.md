@@ -28,8 +28,8 @@
 - AnchorDocking: (Permite criar aplicaçoes com dockagem);
 - DockedFormEditor: (Ancora Form na Unit (Código/Form/Ancoragem no editor));
 - LazProjectGroups: (Permite agrupar projetos);
-- fclfpreport: fpReport;
-- lazidefpreport: fpReport;
+- lclfpreport: fpReport;
+- lazidefpreport: fpReport - Instala a paleta na IDE;
 - lazfpreportdesign: fpReport;
 
 ## Pacotes online:
