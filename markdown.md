@@ -28,3 +28,26 @@ Captura de tela mostrando a versão renderizada do markdown. As referências a p
 Se a descrição de um item da lista de tarefas começar com parênteses, você precisará fazer escape dele com \:
 
 - [ ] \(Optional) Open a followup issue
+
+
+
+Sobre a criação de diagramas
+
+Você pode criar diagramas em Markdown usando três sintaxes diferentes: mermaid, geoJSON e topoJSON e ASCII STL. A renderização do diagrama está disponível em GitHub Issues, GitHub Discussions, solicitações de pull, wikis e arquivos markdown.
+Criando diagramas do mermaid
+
+O Mermeid é uma ferramenta inspirada em Markdown que transforma texto em diagramas. Por exemplo, o Mermeid pode interpretar gráficos de fluxo, diagramas de sequência, gráficos de pizza e muito mais. Para obter mais informações, confira a documentação do Mermaid.
+
+Para criar um diagrama do Mermaid, adicione a sintaxe do Mermaid dentro de um bloco de código isolado com o identificador de linguagem mermaid. Para saber como criar blocos de código, confira "Criar e realçar blocos de código".
+
+Por exemplo, você pode criar um fluxograma especificando valores e setas.
+
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
