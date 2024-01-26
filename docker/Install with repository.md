@@ -1,3 +1,10 @@
+# Prerequisites
+
+> [!NOTE]
+> Note
+>  If you use ufw or firewalld to manage firewall settings, be aware that when you expose container ports using Docker, these ports bypass your firewall rules. For more information, refer to Docker and ufw.
+>    
+
 Set up Docker's apt repository.
 
 # Add Docker's official GPG key:
