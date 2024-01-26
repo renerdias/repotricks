@@ -1,9 +1,12 @@
 Fonte: https://docs.docker.com/engine/install/debian/#uninstall-docker-engine
 
-> [!Caution]
-> Pode parecer estranho o 1º passo ser a desinstalação, mas ignore, caso não tenha versões anteriores instaladas
+<br/><br/>
+
+> [!TIP]
+> ### Pode parecer estranho o 1º passo ser a desinstalação, mas ignore, caso não tenha versões anteriores instaladas
 >
 
+<br/><br/>
 
 # Uninstall Docker Engine
 
