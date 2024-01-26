@@ -17,6 +17,9 @@ Fonte: https://docs.docker.com/engine/install/debian/
   
 
 
+> [!CAUTION]
+> Verificar o uso do docker.io do debian/ubuntu ao invés do docker-ce do docker.com
+> 
 ---
 # Instalar usando um repositório
   
