@@ -1,3 +1,5 @@
+Fonte: https://docs.docker.com/engine/install/debian/#uninstall-docker-engine
+
 # Uninstall Docker Engine
 
 ## Uninstall the Docker Engine, CLI, containerd, and Docker Compose packages:
