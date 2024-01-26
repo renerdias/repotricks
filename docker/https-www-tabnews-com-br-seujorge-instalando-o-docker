@@ -40,6 +40,7 @@ Para corrigir esse problema, você pode remover o diretório ~/.docker/ (ele ser
 sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 sudo chmod g+rwx "$HOME/.docker" -R
 
+---
 Configuirando o docker para iniciar com o systemd
 
 Geralmente essa configuração é desnecessária pois na maioria das distribuições Linux modernas utilizam o systemd para gerenciar quais serviços iniciam quando o sistema é inicializado. No Debian e no Ubuntu, o serviço do Docker é iniciado automaticamente durante a inicialização por padrão. Para iniciar automaticamente o Docker e o containerd durante a inicialização em outras distribuições Linux que utilizam o systemd, execute os seguintes comandos:
@@ -52,6 +53,9 @@ Para interromper esse comportamento, utilize o comando "disable" em vez disso.
 sudo systemctl disable docker.service
 sudo systemctl disable containerd.service
 
+
+
+---
 Instalando o docker-compose
 
 O Docker Compose é uma ferramenta desenvolvida pela Docker, Inc. que permite definir e gerenciar aplicações compostas por vários contêineres Docker. Ele é utilizado para simplificar o processo de orquestração de múltiplos serviços Docker, permitindo que você descreva a infraestrutura necessária para sua aplicação em um arquivo YAML.
