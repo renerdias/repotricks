@@ -7,8 +7,13 @@ Fonte: https://docs.docker.com/engine/install/debian/
 > Se você usa ufw ou firewalld para gerenciar configurações de firewall, esteja ciente de que quando você expõe portas de contêiner usando Docker, essas portas ignoram suas regras de firewall.
 >    
 
-
 <br><br><br>
+> [!NOTE]
+> Desinstalar versoes antigas, ver arquivo de desinstalação
+<br><br><br>
+
+
+
   
 
 
