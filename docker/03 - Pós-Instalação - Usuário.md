@@ -59,37 +59,3 @@ To fix this problem, either remove the ~/.docker/ directory (it's recreated auto
 
      sudo chmod g+rwx "$HOME/.docker" -R
 ```
-
-# Configure Docker to start on boot with systemd
-
-Many modern Linux distributions use systemd to manage which services start when the system boots. On Debian and Ubuntu, the Docker service starts on boot by default. To automatically start Docker and containerd on boot for other Linux distributions using systemd, run the following commands:
-
-```sh
- sudo systemctl enable docker.service
-
- sudo systemctl enable containerd.service
-```
-
-To stop this behavior, use disable instead.
-```sh
- sudo systemctl disable docker.service
-
- sudo systemctl disable containerd.service
-```
-
-If you need to add an HTTP proxy, set a different directory or partition for the Docker runtime files, or make other customizations, see customize your systemd Docker daemon options.
-
-# Configure default logging driver
-
-Docker provides logging drivers for collecting and viewing log data from all containers running on a host. The default logging driver, json-file, writes log data to JSON-formatted files on the host filesystem. Over time, these log files expand in size, leading to potential exhaustion of disk resources.
-
-To avoid issues with overusing disk for log data, consider one of the following options:
-
-    Configure the json-file logging driver to turn on log rotation.
-    Use an alternative logging driver such as the "local" logging driver that performs log rotation by default.
-    Use a logging driver that sends logs to a remote logging aggregator.
-
-# Next steps
-
-    Read the Get started training modules to learn how to build an image and run it as a containerized application.
-    Review the topics in Develop with Docker to learn how to build new applications using Docker.
