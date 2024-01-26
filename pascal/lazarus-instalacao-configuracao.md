@@ -18,6 +18,17 @@
 ## Linha vertical de correspondencia:
     Ferramentas > Opções > Editor > Exibir > Indicadores e Correpondência, na Seção, Palavras chave correspondentes, marcar a opção "Contorno";
 
+## Alteração do nome da pasta de backup dos arquivos dos projetos
+    Ferramentas > Opções > Cópia de segurança
+      Na seção **Arquivo do Projeto**:
+        Em Tipo, selecionar a opção 'Extensão definida pelo usuário';
+        Em 'Extensão definida pelo usuário' alterar de 'bak' para '__bkp'
+        E alterar o nome do subdiretório para backup de "backup" para __backup;
+      Na seção **Outros arquivos**:
+        Em Tipo, selecionar a opção 'Extensão definida pelo usuário';
+        Em 'Extensão definida pelo usuário' alterar de 'bak' para '__bkp'
+        E alterar o nome do subdiretório para backup de "backup" para __backup;     
+
 
 
 # Componentes
