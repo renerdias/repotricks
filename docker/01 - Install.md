@@ -1,10 +1,10 @@
 Fonte: https://docs.docker.com/engine/install/debian/
 
-# Prerequisites
+# Pre-requisitos
 
 > [!NOTE]
-> Note
->  If you use ufw or firewalld to manage firewall settings, be aware that when you expose container ports using Docker, these ports bypass your firewall rules. For more information, refer to Docker and ufw.
+>
+> Se você usa ufw ou firewalld para gerenciar configurações de firewall, esteja ciente de que quando você expõe portas de contêiner usando Docker, essas portas ignoram suas regras de firewall.
 >    
 
 
@@ -13,11 +13,11 @@ Fonte: https://docs.docker.com/engine/install/debian/
 
 
 ---
-# Install with repository
+# Instalar usando um repositório
   
-## Set up Docker's apt repository.
+## Configurando o repositório do Docker
 
-### Add Docker's official GPG key:
+### Adicione a chave GPG oficial do Docker:
 ```sh
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
@@ -26,7 +26,7 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
 
-### Add the repository to Apt sources:
+### Adicione o repositório às fontes do Apt:
 ```sh
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
@@ -37,26 +37,26 @@ sudo apt-get update
 
 > [!NOTE]
 > 
->  If you use a derivative distro, such as Kali Linux, you may need to substitute the part of this command that's expected to print the version codename:
+> Se você usa uma distribuição derivada, como Kali Linux, pode ser necessário substituir a parte deste comando que deve imprimir o codinome da versão:
 > 
 >  (. /etc/os-release && echo "$VERSION_CODENAME")
 >
->  Replace this part with the codename of the corresponding Debian release, such as bookworm.
+> Substitua esta parte pelo codinome da versão Debian correspondente, como bookworm.
 >
 
 <br><br>
-## Install the Docker packages.
+## Instale os pacotes do Docker.
 
-### To install the latest version, run:
+### Para instalar a versão mais recente, execute:
 ```sh
  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-### Verify that the installation is successful by running the hello-world image:
+### Verifique se a instalação foi bem-sucedida executando a imagem hello-world:
 ```
  sudo docker run hello-world
 ```
 
-This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
+Este comando baixa uma imagem de teste e a executa em um contêiner. Quando o contêiner é executado, ele imprime uma mensagem de confirmação e sai.
 
 
