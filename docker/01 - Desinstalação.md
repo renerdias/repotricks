@@ -22,7 +22,7 @@ ou
 for pkg in docker docker-engine docker.io containerd runc docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras; do sudo apt-get remove $pkg; done
 ```
 
-Docker-compose ::
+# Isso acima desinstala o Docker-compose ????
 
 ## Imagens, contêineres, volumes ou arquivos de configuração personalizados em seu host não são removidos automaticamente. 
 Para excluir todas as imagens, contêineres e volumes:
