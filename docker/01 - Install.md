@@ -7,9 +7,17 @@ Fonte: https://docs.docker.com/engine/install/debian/
 >  If you use ufw or firewalld to manage firewall settings, be aware that when you expose container ports using Docker, these ports bypass your firewall rules. For more information, refer to Docker and ufw.
 >    
 
-Set up Docker's apt repository.
 
-# Add Docker's official GPG key:
+<br><br><br>
+  
+
+
+---
+# Install with repository
+  
+## Set up Docker's apt repository.
+
+### Add Docker's official GPG key:
 ```sh
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
@@ -18,7 +26,7 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
 
-# Add the repository to Apt sources:
+### Add the repository to Apt sources:
 ```sh
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
@@ -36,15 +44,15 @@ sudo apt-get update
 >  Replace this part with the codename of the corresponding Debian release, such as bookworm.
 >
 
+<br><br>
+## Install the Docker packages.
 
-# Install the Docker packages.
-
-## To install the latest version, run:
+### To install the latest version, run:
 ```sh
  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-## Verify that the installation is successful by running the hello-world image:
+### Verify that the installation is successful by running the hello-world image:
 ```
  sudo docker run hello-world
 ```
