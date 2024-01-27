@@ -7,7 +7,8 @@ Se você não quiser preceder o comando docker com sudo, crie um grupo Unix cham
 
 
 
-> [!Alert]
+
+> [!WARNING]
 > O grupo docker concede privilégios de nível raiz ao usuário. Para obter detalhes sobre como isso afeta a segurança do seu sistema, > consulte Docker Daemon Attack Surface.
 >
 > 
