@@ -1,18 +1,21 @@
 
-# Configure Docker to start on boot with systemd
+# Configure o Docker para iniciar na inicialização com systemd
 
-Many modern Linux distributions use systemd to manage which services start when the system boots. On Debian and Ubuntu, the Docker service starts on boot by default. To automatically start Docker and containerd on boot for other Linux distributions using systemd, run the following commands:
+Muitas distribuições modernas do Linux usam o systemd para gerenciar quais serviços são iniciados quando o sistema é inicializado. 
+
+No Debian e Ubuntu, o serviço Docker inicia na inicialização por padrão. 
+
+
+Para iniciar automaticamente o Docker e o containerd na inicialização de outras distribuições Linux usando systemd, execute os seguintes comandos:
 
 ```sh
- sudo systemctl enable docker.service
-
- sudo systemctl enable containerd.service
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 ```
 
-To stop this behavior, use disable instead.
+Para interromper esse comportamento, use desativar.
 ```sh
- sudo systemctl disable docker.service
-
- sudo systemctl disable containerd.service
+sudo systemctl disable docker.service
+sudo systemctl disable containerd.service
 ```
 
