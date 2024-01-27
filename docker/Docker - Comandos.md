@@ -1,22 +1,67 @@
 
-Uso:  docker [OPTIONS] COMMAND
+## Uso:  docker [OPTIONS] COMMAND
 
 A self-sufficient runtime for containers
 
-Comandos comuns:
-  run         Cria e executa um novo contêiner a partir de uma imagem
-  exec        Executa um comando em um contêiner em execução
-  ps          Lista os contêineres
-  build       Constrói uma imagem a partir de um Dockerfile
-  pull        Download an image from a registry
-  push        Upload an image to a registry
-  images      Lista as imagens
-  login       Log in to a registry
-  logout      Log out from a registry
-  search      Pesquisa por imagens no Docker Hub
-  version     Mostra as informações da versão do Docker
-  info        Exibir informações de todo o sistema
-
+### Comandos comuns:
+<table>
+  <tr>
+    <td>run</td>
+    <td>Cria e executa um novo contêiner a partir de uma imagem</td>
+  </tr>
+  <tr>
+    <td>exec</td>
+    <td>Executa um comando em um contêiner em execução</td>
+  </tr>
+  <tr>
+    <td>ps</td>
+    <td>Lista os contêineres</td>
+  </tr>
+  <tr>
+    <td>build</td>
+    <td>Constrói uma imagem a partir de um Dockerfile</td>
+  </tr>
+  <tr>
+    <td>pull</td>
+    <td>Download an image from a registry</td>
+  </tr>
+  <tr>
+    <td>
+-  push   </td>
+      <td>     Upload an image to a registry
+        </tr>
+  <tr>
+    <td>
+-  images   </td>
+      <td>   Lista as imagens
+        </tr>
+  <tr>
+    <td>
+-  login   </td>
+      <td>    Log in to a registry
+        </tr>
+  <tr>
+    <td>
+-  logout  </td>
+      <td>    Log out from a registry
+        </tr>
+  <tr>
+    <td>
+-  search   </td>
+      <td>   Pesquisa por imagens no Docker Hub
+        </tr>
+  <tr>
+    <td>
+-  version  </td>
+      <td>   Mostra as informações da versão do Docker
+        </tr>
+  <tr>
+    <td>
+-  info   </td>
+      <td>     Exibir informações de todo o sistema
+    </td>
+    </tr>
+</table>
 ---
    
 
