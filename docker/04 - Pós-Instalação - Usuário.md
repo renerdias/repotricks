@@ -24,12 +24,12 @@ Para criar o grupo docker e adicionar seu usuário:
 ## Crie o grupo docker.
 
 ```sh
- sudo groupadd docker
+sudo groupadd docker
 ```
 
 ## Adicione seu usuário ao grupo docker.
 ```sh
- sudo usermod -aG docker $USER
+sudo usermod -aG docker $USER
 ```
 
 
@@ -39,12 +39,12 @@ Para criar o grupo docker e adicionar seu usuário:
 
 Você também pode executar o seguinte comando para ativar as alterações nos grupos:
 ```sh
- newgrp docker
+newgrp docker
 ```
 
 ## Verifique se você pode executar comandos do docker sem sudo.
 ```sh
- docker run hello-world
+docker run hello-world
 ```
 
 Este comando baixa uma imagem de teste e a executa em um contêiner. Quando o contêiner é executado, ele imprime uma mensagem e sai.
@@ -59,7 +59,6 @@ Para corrigir esse problema, remova o diretório ~/.docker/ (ele é recriado aut
 
 
 ```sh
- sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
-
-     sudo chmod g+rwx "$HOME/.docker" -R
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
 ```
