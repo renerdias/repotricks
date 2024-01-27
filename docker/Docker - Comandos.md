@@ -9,7 +9,9 @@ A self-sufficient runtime for containers
     <td>run</td>
     <td>
       Cria e executa um novo contêiner a partir de uma imagem
-      <br/>[Ver opções para o comando](./logs.md) / Ver exemplos de uso
+      <br/><a href="./logs.md">Ver opções para o comando</a>
+      <a href="./logs.md">Ver exemplos de uso</a>
+      
     </td>
   </tr>
   <tr>
