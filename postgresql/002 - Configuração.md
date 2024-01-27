@@ -42,6 +42,38 @@ sudo iptables -A INPUT -p tcp --dport 5432 -j ACCEPT
 
 
 
+Descrição:
+
+É possível disponibilizar o acesso via rede a um banco PostGreSQL? Quais as configurações necessárias?
+
+Solução:
+
+Sim, é possível.  Para isso, siga estes procedimentos:
+
+
+Servidor:
+
+    Instale o Banco de Dados PostGreSQL. O link para download do instalador encontra-se aqui.
+    Adicione uma exceção no Firewall do Windows (liberar porta TCP 5432).
+    Edite o arquivo pg_hba.conf. Exemplo de localização de arquivo:
+    C:\Program Files\PostgreSQL\8.4\data.
+    Altere a linha para:
+
+# IPv4 local connections:
+host all  all  0.0.0.0/0  md5
+
+    Edite o arquivo postgresql.conf, removendo o comentário inicial da linha abaixo para:
+
+listen_addresses = '*' # what IP address(es) to listen on;
+
+
+
+
+
+
+
+
+
 O acesso remoto ao PostgreSQL vem desabilitado por padrão. Para habilitá-lo, siga os passos abaixo:
 
 1) Faça o login no servidor onde o PostgreSQL está instalado
