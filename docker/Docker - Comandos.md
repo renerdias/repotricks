@@ -26,11 +26,11 @@ A self-sufficient runtime for containers
   </tr>
   <tr>
     <td>pull</td>
-    <td>Download an image from a registry</td>
+    <td><s>Download an image from a registry</s></td>
   </tr>
   <tr>
     <td>push</td>
-    <td>Upload an image to a registry</td>
+    <td><s>Upload an image to a registry</s></td>
   </tr>
   <tr>
     <td>images</td>
@@ -38,11 +38,11 @@ A self-sufficient runtime for containers
   </tr>
   <tr>
     <td>login</td>
-    <td>Log in to a registry</td>
+    <td><s>Log in to a registry</s></td>
   </tr>
   <tr>
     <td>logout</td>
-    <td>Log out from a registry</td>
+    <td><s>Log out from a registry</s></td>
   </tr>
   <tr>
     <td>search</td>
