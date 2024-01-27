@@ -45,10 +45,7 @@ Server:
   seccomp
    Profile: builtin
   cgroupns
- Kernel Version: 5.15.0-76-generic
- Operating System: Linux Mint 21.2
- OSType: linux
- Architecture: x86_64
+**... Informações sobre o SO ...** 
  CPUs: 4
  Total Memory: 15.5GiB
  Name: desktop
