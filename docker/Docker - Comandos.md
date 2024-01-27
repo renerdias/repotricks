@@ -26,42 +26,37 @@ A self-sufficient runtime for containers
     <td>Download an image from a registry</td>
   </tr>
   <tr>
-    <td>
--  push   </td>
-      <td>     Upload an image to a registry
-        </tr>
+    <td>push</td>
+    <td>Upload an image to a registry</td>
+  </tr>
   <tr>
-    <td>
--  images   </td>
-      <td>   Lista as imagens
-        </tr>
+    <td>images</td>
+    <td>Lista as imagens</td>
+  </tr>
   <tr>
-    <td>
--  login   </td>
-      <td>    Log in to a registry
-        </tr>
+    <td>login</td>
+    <td>Log in to a registry</td>
+  </tr>
   <tr>
-    <td>
--  logout  </td>
-      <td>    Log out from a registry
-        </tr>
+    <td>logout</td>
+    <td>Log out from a registry</td>
+  </tr>
   <tr>
-    <td>
--  search   </td>
-      <td>   Pesquisa por imagens no Docker Hub
-        </tr>
+    <td>search</td>
+      <td>Pesquisa por imagens no Docker Hub</td>
+  </tr>
   <tr>
-    <td>
--  version  </td>
-      <td>   Mostra as informações da versão do Docker
-        </tr>
+    <td>version</td>
+    <td>Mostra as informações da versão do Docker</td>
+  </tr>
   <tr>
-    <td>
--  info   </td>
-      <td>     Exibir informações de todo o sistema
-    </td>
-    </tr>
+    <td>info</td>
+    <td>Exibir informações de todo o sistema</td>
+  </tr>
 </table>
+
+
+
 ---
    
 
