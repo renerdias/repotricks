@@ -18,6 +18,9 @@
 ## Linha vertical de correspondencia:
     Ferramentas > Opções > Editor > Exibir > Indicadores e Correpondência, na Seção, Palavras chave correspondentes, marcar a opção "Contorno";
 
+## Linha vertical de limite de formatação
+    Ferramentas > Opções > Editor > Exibir, na seção "Margem e medianiz",  marcar a opção Margem direita visível e alterar valor para "150", depois clicar em "Editar cor" e escolher a cor vermelhaIndicadores e Correpondência, na Seção, Palavras chave correspondentes, marcar a opção "Contorno";
+
 ## Alteração do nome da pasta de backup dos arquivos dos projetos
     Ferramentas > Opções > Cópia de segurança
       Na seção **Arquivo do Projeto**:
