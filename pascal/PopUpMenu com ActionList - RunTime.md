@@ -6,8 +6,8 @@ unit uSynEditPopupEdit;
 interface
 
 uses
- --ActnList,
- --Menus,
+ ActnList,
+ Menus,
  Classes,
  SynEdit;
 
