@@ -45,6 +45,7 @@
 - lclfpreport: fpReport;
 - lazidefpreport: fpReport - Instala a paleta na IDE;
 - lazfpreportdesign: fpReport;
+- lazreport: LazReport, similar ao fpReport, mas aparentemente mais facil de usar em modo gráfico
 
 ## Pacotes online:
 - RichMemo;
