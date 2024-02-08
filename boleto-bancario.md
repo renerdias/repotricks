@@ -23,6 +23,8 @@ Os números do boleto bancário formam a chamada linha digitável, uma sequênci
     4 dígitos seguintes: representam a data de vencimento do boleto a partir da data-base definida pelo Banco Central, que é 7 de outubro de 1997.
     10 últimos dígitos: se referem ao valor do boleto, por exemplo, se o valor for R$ 25,90, esses números do boleto será 0000002590.
 
+```
+
 <div class="content">
 
                 <h1>Anatomia do código de barras Febraban:</h1>
@@ -72,4 +74,3 @@ Os números do boleto bancário formam a chamada linha digitável, uma sequênci
                 </div>
 
                     </div>
-```
