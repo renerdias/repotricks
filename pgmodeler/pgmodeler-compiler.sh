@@ -189,11 +189,11 @@ PACKAGE_MANTAINER='Rener Dias <renerdias@live.com>'
 DELIMIT=$(echo "$PGMODELER_COMPILED_DIR" | cut --bytes=1-1)
 PACKAGE_SIZE=$(du "$PGMODELER_COMPILED_DIR" | tail -1 | cut -d"$DELIMIT" -f 1)
 
+mkdir -p "$PGMODELER_DEB_DIR"
+cd "$PGMODELER_DEB_DIR"
+mkdir -p "$PGMODELER_DEB_DIR"/DEBIAN
+   
 func_Especifica_Control() {
-   mkdir -p "$PGMODELER_DEB_DIR"
-   cd "$PGMODELER_DEB_DIR"
-   mkdir -p "$PGMODELER_DEB_DIR"/DEBIAN
-
    # Criando o arquivo control
    touch DEBIAN/control
 
@@ -210,3 +210,16 @@ func_Especifica_Control() {
 }
 
 #func_Especifica_Control
+
+func_Especifica_PostInstall() {
+   # Criando o arquivo control
+   touch DEBIAN/control
+   
+echo '#O script postinst é executado após a instalação do pacote. Ele pode ser usado para configurar o sistema ou fazer ajustes necessários. Aqui está um exemplo simples de um script postinst:'
+
+echo '#!/bin/bash'
+
+echo 'echo "Instalação do pacote concluída com sucesso!"'
+
+echo '# Adicione outros comandos de configuração, se necessário.'
+}
