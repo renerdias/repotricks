@@ -173,3 +173,40 @@ chmod +x $PGMODELER_DESKTOP_SHORTCUT_FILE
 #cp $PGMODELER_DESKTOP_SHORTCUT_FILE ~/.local/share/applications
 
 
+
+
+#################################
+##  Create DEB Package         ##
+
+#PACKAGE_NAME=
+PACKAGE_NAME='pgModeler'
+PACKAGE_DESCRIPTION='sdafa'
+PACKAGE_VERSION=$PGMODELER_GIT_VERSION
+PACKAGE_AUTHOR='Raphael Araújo'
+PACKAGE_MANTAINER='Rener Dias <renerdias@live.com>'
+
+# Calcula o tamanho do diretório do programa em Kb
+DELIMIT=$(echo "$PGMODELER_COMPILED_DIR" | cut --bytes=1-1)
+PACKAGE_SIZE=$(du "$PGMODELER_COMPILED_DIR" | tail -1 | cut -d"$DELIMIT" -f 1)
+
+func_Especifica_Control() {
+   mkdir -p "$PGMODELER_DEB_DIR"
+   cd "$PGMODELER_DEB_DIR"
+   mkdir -p "$PGMODELER_DEB_DIR"/DEBIAN
+
+   # Criando o arquivo control
+   touch DEBIAN/control
+
+   # Coleta parametros para o arquivo control
+   echo "Package:        $PACKAGE_NAME" > DEBIAN/control
+   echo "Name:           $PACKAGE_NAME" > DEBIAN/control
+   echo "Description:    $PACKAGE_DESCRIPTION" >> DEBIAN/control
+   echo "Version:        $PACKAGE_VERSION" >> DEBIAN/control
+   echo "Installed-Size: $PACKAGE_SIZE" >> DEBIAN/control
+   echo "Author:         $PACKAGE_AUTHOR" >> DEBIAN/control
+   echo "Maintainer:     $PACKAGE_MANTAINER" >> DEBIAN/control
+   echo "Priority:       optional" >> DEBIAN/control
+   echo "Architecture:   all" >> DEBIAN/control
+}
+
+#func_Especifica_Control
