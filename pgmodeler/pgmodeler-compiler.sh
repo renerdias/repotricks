@@ -1,3 +1,6 @@
+# Baseado no artigo abaixo
+#https://medium.com/@mglaving/compiling-and-installing-pgmodeler-1-1-0-beta1-on-ubuntu-22-04-howto-guide-cd1faab9585e
+
 ##########################################################
 ##   Atualiza a lista de pacotes e atualiza o sistema   ##
 sudo apt update && sudo apt upgrade -y
