@@ -26,7 +26,7 @@ sudo apt install build-essential libxml2-dev perl libx11-xcb-dev \
  libglm-dev qt6-base-dev qt6-tools-dev-tools \
  qt6-tools-dev \
  # Acrescentando por Rener
- libpq-dev libqt6svg* -y
+ curl libpq-dev libqt6svg* -y
  # Removido por Rener
  # freeglut3 libqt6svg6*
 
