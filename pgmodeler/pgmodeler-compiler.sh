@@ -23,10 +23,9 @@ sudo apt install build-essential libxml2-dev perl libx11-xcb-dev \
  libxkbcommon-dev libxkbcommon-x11-dev libxcb-xinerama0-dev \
  libxcb-sync-dev libcups2-dev libpq-dev git g++ cmake \
  freeglut3-dev binutils libglew-dev mesa-common-dev libglew-dev \
- libglm-dev qt6-base-dev qt6-tools-dev-tools \
- qt6-tools-dev \
+ libglm-dev qt6-base-dev qt6-tools-dev-tools qt6-tools-dev \
  # Acrescentando por Rener
- curl libpq-dev libqt6svg* -y
+ libpq-dev libqt6svg* -y
  # Removido por Rener
  # freeglut3 libqt6svg6*
 
@@ -35,6 +34,7 @@ sudo apt install build-essential libxml2-dev perl libx11-xcb-dev \
 
 #######################################################
 ##  Obtendo a identificação da última versão/release  ##
+sudo apt install curl
 PGMODELER_GIT_VERSION=$(curl --silent -qI https://github.com/pgmodeler/pgmodeler/releases/latest | awk -F '/' '/^location/ {print  substr($NF, 1, length($NF)-1)}');
 
 #criar estrutura de pastas
