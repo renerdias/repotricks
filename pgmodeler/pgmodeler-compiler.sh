@@ -83,9 +83,9 @@ mkdir -p $PGMODELER_COMPILED_DIR/lib/qtplugins/tls
 #git clone --branch $PGMODELER_GIT_VERSION --single-branch https://github.com/pgmodeler/pgmodeler.git
 
 # Get the pgModeler repo
-cd $PGMODELER_ROOTDIR
+cd $PGMODELER_VERSION_DIR
 git clone --branch $PGMODELER_GIT_VERSION --single-branch https://github.com/pgmodeler/pgmodeler.git
-mv -T $PGMODELER_ROOTDIR/pgmodeler $PGMODELER_SOURCECODE_DIR
+mv -T $PGMODELER_VERSION_DIR/pgmodeler $PGMODELER_SOURCECODE_DIR
 #cd $PGMODELER_SOURCECODE_DIR
 #git pull
 #git checkout $PGMODELER_VERSION
