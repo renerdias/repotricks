@@ -58,6 +58,7 @@ PROGRAMAS_PARA_INSTALAR=(
   # simple-scan
   # firefox
   # libreoffice
+  ttf-mscorefonts-installer
 
   # Repositório padrão
   telegram-desktop
@@ -131,6 +132,8 @@ flatpak install flathub io.github.shiftey.Desktop
 # ----------------------------- PÓS-INSTALAÇÃO ------------------------- #
 ## Finalização, atualização e limpeza##
 sudo apt update && sudo apt dist-upgrade -y
+# update the font cache with 
+sudo fc-cache -fv
 flatpak update
 sudo apt autoclean
 sudo apt autoremove -y
