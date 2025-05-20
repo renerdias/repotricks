@@ -58,7 +58,10 @@ PROGRAMAS_PARA_INSTALAR=(
   # simple-scan
   # firefox
   # libreoffice
+
+  # Fontes
   ttf-mscorefonts-installer
+  fonts-inter
 
   # Repositório padrão
   telegram-desktop
