@@ -127,17 +127,21 @@ done
 
 ## Instalando pacotes Flatpak ##
 flatpak install flathub com.wps.Office -y
+flatpak install flathub org.libreoffice.LibreOffice
+flatpak install flathub org.onlyoffice.desktopeditors -y
+flatpak install flathub com.github.jeromerobert.pdfarranger -y
+flatpak install flathub io.github.shiftey.Desktop -y
 flatpak install flathub com.getpostman.Postman -y
-flatpak install flathub io.github.shiftey.Desktop
 
 # ---------------------------------------------------------------------- #
 
 # ----------------------------- PÓS-INSTALAÇÃO ------------------------- #
 ## Finalização, atualização e limpeza##
-sudo apt update && sudo apt dist-upgrade -y
+sudo apt update 
+sudo apt dist-upgrade -y 
+flatpak update -y
 # update the font cache with 
 sudo fc-cache -fv
-flatpak update
 sudo apt autoclean
 sudo apt autoremove -y
 # ---------------------------------------------------------------------- #
