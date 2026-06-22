@@ -80,6 +80,10 @@ PROGRAMAS_PARA_INSTALAR=(
     pgmodeler # Vai ser instalada uma versao mais recente com o repositorio do ppostgresql
   obs-studio
   google-chrome-stable
+
+ # Driver's impressoras OKI
+  printer-driver-oki
+
 )
 
 
